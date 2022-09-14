@@ -37,14 +37,14 @@ header{
 
 .me {
     /* background: linear-gradient(var(--color-primary), transparent); */
-    width: 22rem;
-    height: 30rem;
+    /* width: 22rem; */
+    height: 100rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 1rem;
     border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    /* overflow: hidden; */
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
 
 }
 /*   SCROLL DOWN */
@@ -75,4 +75,15 @@ header{
         display: none;
 
     }
+    .me{
+        padding: 0rem 9rem 0rem 3rem;
+        height: 100%;
+    }
+    .header__container{
+    
+        
+        position:static;
+        
+    }
+   
 }
