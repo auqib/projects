@@ -35,6 +35,7 @@ const Header = () => {
                 autoplay
               /> */}
             </span>
+            <div className="text_animation">
             <TypeAnimation
 sequence={[
       1500,
@@ -75,7 +76,11 @@ sequence={[
     cursor= {1}
   />
 
-       <h6>{typingStatus}</h6> 
+            </div>
+            <span>
+
+            </span>
+       <div className="typing">{typingStatus}</div> 
         
         <CTA />
         {/* <HeaderSocials /> */}
