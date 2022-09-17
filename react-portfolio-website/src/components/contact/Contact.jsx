@@ -33,7 +33,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <BsLinkedin contact__option-icon/>
+            <BsLinkedin className="contact__option-icon"/>
             <h4>LinkedIn</h4>
             <h5>Auqib Nazir</h5>
 
@@ -42,7 +42,7 @@ const Contact = () => {
             </a>
           </article>
           <article className="contact__option">
-            <BsWhatsapp contact__option-icon />
+            <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+61-410640296</h5>
             <a

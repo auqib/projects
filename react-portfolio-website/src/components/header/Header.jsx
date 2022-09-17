@@ -3,14 +3,14 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/photo.png";
 import HeaderSocials from "./HeaderSocials";
-import DecodeAnimation from "react-decode-animation";
+// import DecodeAnimation from "react-decode-animation";
 import { TypeAnimation } from "react-type-animation";
-import { disablePageScroll, enablePageScroll, getScrollState,clearQueueScrollLocks  } from 'scroll-lock';
+// import { disablePageScroll, enablePageScroll, getScrollState,clearQueueScrollLocks  } from 'scroll-lock';
 
 const Header = () => {
-  const ref = useRef(null);
+  // const ref = useRef(null);
   const [typingStatus, setTypingStatus] = useState('Initializing');
-  const [decodeState, setDecodeState] = useState("Reset")
+  // const [decodeState, setDecodeState] = useState("Reset")
   const changecolor =()=>{
     document.body.style.backgroundColor = "#1f1f38 "
   }
@@ -27,11 +27,13 @@ const Header = () => {
         <h2>Hello I'm</h2>
        
         <span className="highlighted-text">
-              <DecodeAnimation
+
+          Auqib Nazir
+              {/* <DecodeAnimation
                 state={decodeState}
                 text={"Auqib Nazir"}
                 autoplay
-              />
+              /> */}
             </span>
             <TypeAnimation
 sequence={[
@@ -42,7 +44,7 @@ sequence={[
         
       
       },
-      'I am a Full Stack Developer, I can do whatever I want on this website 😎 ',
+      'I am a Full Stack Developer, I like making Web Applications 😎 ',
       () => {
        setTypingStatus('Done Typing');
        
@@ -58,7 +60,7 @@ sequence={[
        1000,
       () => {
         setTypingStatus('Scroll Down to know more about me 👇');
-        setDecodeState("Playing");
+        // setDecodeState("Playing");
         // clearQueueScrollLocks();
         // enablePageScroll();
         changecolor();
@@ -75,12 +77,12 @@ sequence={[
 
        <h6>{typingStatus}</h6> 
         
-        {/* <CTA />
-        <HeaderSocials />
-        <div className="me">
+        <CTA />
+        {/* <HeaderSocials /> */}
+        {/* <div className="me">
           <img src={ME} alt="my photo" />
-        </div>
-        <a href="#contacts" className="scroll__down">
+        </div> */}
+        {/* <a href="#contact" className="scroll__down">
           Scroll Down
         </a> */}
       </div>
