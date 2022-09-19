@@ -20,15 +20,30 @@
     border-radius: 1.5rem;
     overflow: hidden;
 }
-.portfolio__item h3 {
-    margin: 1.2 0 2rem;
+.portfolio__item h2 {
+    margin: 0.8rem 1.2rem 1rem 1.2rem;
+    text-align: center;
+    height: 1.5rem;
+    color: rgb(55, 255, 10);
+
+}
+.portfolio__item h4 {
+    margin: 1rem ;
+    text-align: center;
+    height: 1rem;
+    color: rgb(185, 188, 205);
 
 }
 .portfolio__item-cta{
     display:flex ;
     gap: 1rem;
     margin-bottom: 1rem;
+    justify-content: center
+    ;
 }
+
+
+
 /* medium devices  */
 @media screen and (max-width:1024px){
     .portfolio__container{

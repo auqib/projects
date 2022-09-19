@@ -1,151 +1,61 @@
 import React from "react";
 import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Projects</h5>
-      <h2>Portfolio</h2>
+      {/* <h5>Portf</h5> */}
+      <h2>My Recent Projects</h2>
       <div className="container portfolio__container">
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
-          <h3>This is portfolio item title</h3>
+          <h2>My Notes</h2>
+          <h4>NodeJs Application</h4>
           <div className="portfolio__item-cta">
-          <a
-            href="https://github.com/auqib/projects"
-            className="btn"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://auqib.com/"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live DEMO
-          </a>
+            <a
+              href="https://github.com/auqib/projects"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://anotes.auqib.com/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live DEMO
+            </a>
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
-          <h3>This is portfolio item title</h3>
+          <h2>Text Editor</h2>
+          <h4>React Application</h4>
+         
           <div className="portfolio__item-cta">
-          <a
-            href="https://github.com/auqib/projects"
-            className="btn"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://auqib.com/"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live DEMO
-          </a>
+            <a
+              href="https://github.com/auqib/projects"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://auqib.com/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live DEMO
+            </a>
           </div>
         </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is portfolio item title</h3>
-          <div className="portfolio__item-cta">
-          <a
-            href="https://github.com/auqib/projects"
-            className="btn"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://auqib.com/"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live DEMO
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is portfolio item title</h3>
-          <div className="portfolio__item-cta">
-          <a
-            href="https://github.com/auqib/projects"
-            className="btn"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://auqib.com/"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live DEMO
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is portfolio item title</h3>
-          <div className="portfolio__item-cta">
-          <a
-            href="https://github.com/auqib/projects"
-            className="btn"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://auqib.com/"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live DEMO
-          </a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3>This is portfolio item title</h3>
-          <div className="portfolio__item-cta">
-          <a
-            href="https://github.com/auqib/projects"
-            className="btn"
-            target="_blank"
-          >
-            Github
-          </a>
-          <a
-            href="https://auqib.com/"
-            className="btn btn-primary"
-            target="_blank"
-          >
-            Live DEMO
-          </a>
-          </div>
-        </article>
-        
       </div>
     </section>
   );

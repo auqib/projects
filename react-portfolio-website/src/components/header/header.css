@@ -1,3 +1,6 @@
+body{
+    overflow:hidden
+}
 header{
     height: 100vh;
     padding-top: 14rem ;
@@ -20,6 +23,7 @@ header{
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+    display:none
 }
 /*     SOCIALS */
 
@@ -92,7 +96,7 @@ header{
         
     }
     .cta{
-        display: flex;
+        display: none;
         padding-top: 15px;
     }
     .text_animation {

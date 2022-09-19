@@ -3,93 +3,75 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/photo.png";
 import HeaderSocials from "./HeaderSocials";
-// import DecodeAnimation from "react-decode-animation";
 import { TypeAnimation } from "react-type-animation";
-// import { disablePageScroll, enablePageScroll, getScrollState,clearQueueScrollLocks  } from 'scroll-lock';
+import MovingText from "react-moving-text";
 
 const Header = () => {
-  // const ref = useRef(null);
-  const [typingStatus, setTypingStatus] = useState('Initializing');
-  // const [decodeState, setDecodeState] = useState("Reset")
-  const changecolor =()=>{
-    document.body.style.backgroundColor = "#1f1f38 "
-  }
+  const [typingStatus, setTypingStatus] = useState("Initializing");
 
+  const changecolor = () => {
+    document.body.style.backgroundColor = "#1f1f38";
+    document.body.style.overflow = "visible";
+    document.getElementById("contact_button").style.display = "flex";
+    document.getElementById("nav_buttons").style.display = "flex";
+   
+    
+  };
 
-  // disablePageScroll();
-  
- 
   return (
     <header>
-      
-      
       <div className="container header__container">
         <h2>Hello I'm</h2>
-       
+
         <span className="highlighted-text">
+          <MovingText
+            type="blur"
+            duration="2000ms"
+            delay="0s"
+            direction="reverse"
+            timing="ease"
+            iteration="1"
+            fillMode="none"
+          >
+            Auqib Nazir
+          </MovingText>
+        </span>
+        <div className="text_animation">
+          <TypeAnimation
+            sequence={[
+              1500,
+              () => {
+                setTypingStatus("Typing...");
+              },
+              "I am a Full Stack Developer, I like making Web Applications 😎 ",
+              () => {
+                setTypingStatus("");
+              },
+              500,
+              () => {
+                setTypingStatus("");
+              },
+              "",
+              () => {
+                setTypingStatus("");
+              },
+              1000,
+              () => {
+                setTypingStatus("Scroll Down to know more about me 👇");
 
-          Auqib Nazir
-              {/* <DecodeAnimation
-                state={decodeState}
-                text={"Auqib Nazir"}
-                autoplay
-              /> */}
-            </span>
-            <div className="text_animation">
-            <TypeAnimation
-sequence={[
-      1500,
-      () => {
-        setTypingStatus('Typing...');
-        
-        
-      
-      },
-      'I am a Full Stack Developer, I like making Web Applications 😎 ',
-      () => {
-       setTypingStatus('Done Typing');
-       
-      },
-      500,
-      () => {
-        setTypingStatus('Deleting...');
-      },
-      '',
-      () => {
-        setTypingStatus('Done Deleting');
-      },
-       1000,
-      () => {
-        setTypingStatus('Scroll Down to know more about me 👇');
-        // setDecodeState("Playing");
-        // clearQueueScrollLocks();
-        // enablePageScroll();
-        changecolor();
-        
-        
-      },
-      
-     ]}
-    speed={30}
-    wrapper="h3"
-    repeat={0}
-    cursor= {1}
-  />
+                changecolor();
+              },
+            ]}
+            speed={30}
+            wrapper="h3"
+            repeat={0}
+            cursor={1}
+          />
+        </div>
+        <span></span>
+        <div className="typing">{typingStatus}</div>
 
-            </div>
-            <span>
-
-            </span>
-       <div className="typing">{typingStatus}</div> 
-        
         <CTA />
-        {/* <HeaderSocials /> */}
-        {/* <div className="me">
-          <img src={ME} alt="my photo" />
-        </div> */}
-        {/* <a href="#contact" className="scroll__down">
-          Scroll Down
-        </a> */}
       </div>
     </header>
   );

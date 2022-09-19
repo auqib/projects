@@ -1,11 +1,12 @@
 .about__container{
     display: grid;
     grid-template-columns: 35% 50%;
-    gap: 15%;
+    gap: 1%;
+ 
 
 }
 .about__me{
-    width: 100%;
+    width: 60%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(
@@ -66,6 +67,11 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
+
+
+
+
+
 /* medium devices  */
 @media screen and (max-width:1024px){
     .about__container{

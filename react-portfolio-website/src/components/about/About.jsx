@@ -8,7 +8,7 @@ import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get to Know</h5>
+      {/* <h5>Get to Know</h5> */}
       <h2>About Me</h2>
       <div className="container about__container">
         <div className="about__me">
@@ -38,12 +38,13 @@ const About = () => {
           </div>
            
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut
-            voluptatibus aspernatur, quis eos obcaecati repellat veritatis id ea
-            vitae laboriosam et dolorum error nulla, at saepe sint, aperiam ipsa
-            architecto.
+          Strategic Software Developer skilled in application development, with gift for prioritizing and managing several 
+milestones of various projects simultaneously. Talented at code writing, using version control systems. Smart 
+Programmer with fantastic programming skills. Committed to maintaining professionalism and creating innovative 
+programs. 
+
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">Contact Me</a>
         </div>
       </div>
     </section>
