@@ -1,0 +1,17 @@
+{
+  "name": "achat",
+  "version": "1.0.0",
+  "description": "chat application using MERN Stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js",
+    "command": "echo hello world"
+  },
+  "author": "auqib nazir",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  }
+}
