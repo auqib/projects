@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Input, InputGroup, InputRightElement } from '@chakra-ui/input'
 
 const Signup = () => {
-    const [name, setName] = useState()
+    const [name, setName] = useState("max")
     const [email, setEmail] = useState()
     const [confirmpassword, setConfirmpassword] = useState()
     const [password, setPassword] = useState()
@@ -19,7 +19,10 @@ const Signup = () => {
     }
 
     const submitHandler = () => {
-        
+        setName("auqib");
+        console.log("set name clicked")
+    
+
     }
 
     return (
