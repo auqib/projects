@@ -16,11 +16,11 @@ const RegisterAndLoginForm = () => {
     setUsernameContext(username);
     setId(data.id);
   }
-
+  
   return (
-    <div className="bg-blue-50 h-screen flex items-center">
+    <div className="bg-blue-50  h-screen flex items-center  ">
       {/* // ---------------- FORM Start----------- */}
-      <form className="w-64 mx-auto mb-12" onSubmit={handleSubmit}>
+      <form className="w-64 mx-auto mb-12 " onSubmit={handleSubmit}>
         <input
           type="text"
           value={username}
